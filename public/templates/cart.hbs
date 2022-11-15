@@ -1,0 +1,29 @@
+{{#if cart.length}}
+    <table id="lista-carrito" class="u-full-width">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+     {{#each cart}}
+        <tr>
+        <td>img</td>
+        <td>{{name}}</td>
+        <td>${{price}}</td>
+        <td>cantidad</td>
+    </tr>
+    {{/each}}
+    </tbody>
+    <h3>Subtotal: <span class="subtotal"></span></h3>
+</table>
+
+    {{else}}
+        <p>No hay productos en el carrito</p>
+{{/if}}
+
+

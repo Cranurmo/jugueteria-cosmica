@@ -1,0 +1,17 @@
+.trending{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease-in-out;
+    margin-top: 5%;
+
+    &-products-container{
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: #E0DDAA;
+        justify-content: space-around;
+    }
+}

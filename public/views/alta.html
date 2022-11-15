@@ -1,0 +1,133 @@
+<h1>Alta</h1>
+
+<section class="section-product-form">
+    <div class="form-main">
+    <div class="product-form-container">
+        <form action="/api/products" method="post" id="form-alta-producto" enctype="multipart/form-data">
+
+            			<!-- group: Nombre -->
+			<div class="form__group" id="group__name">
+				<label for="name" class="form__label">Nombre:</label>
+				<div class="form__group-input">
+					<input type="text" class="form__input" name="name" id="name" placeholder="John" autofocus>
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                        <!-- grupo: Precio -->
+            <div class="form__group" id="group__price">
+				<label for="price" class="form__label">price:</label>
+				<div class="form__group-input">
+					<input type="number" class="form__input" name="price" id="price" placeholder="$500">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                                <!-- grupo: Stock -->
+            <div class="form__group" id="group__stock">
+                <label for="stock" class="form__label">Stock:</label>
+                <div class="form__group-input">
+                    <input type="number" class="form__input" name="stock" id="stock">
+                    <i class="form__validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">Diligencia bien el formulario</p>
+            </div>
+
+            			<!-- group: brand -->
+			<div class="form__group" id="group__brand">
+				<label for="brand" class="form__label">Marca:</label>
+				<div class="form__group-input">
+					<input type="text" class="form__input" name="brand" id="brand" placeholder="Leggo">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+            			<!-- group: Categoría -->
+			<div class="form__group" id="group__categoria">
+				<label for="category" class="form__label">Categoría:</label>
+				<div class="form__group-input">
+					<input type="text" class="form__input" name="category" id="category" placeholder="Acción">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                            <!-- grupo: Descripción corta -->
+            <div class="form__group" id="group__desc">
+				<label for="description" class="form__label">Descripción corta:</label>
+				<div class="form__group-input">
+					<input type="text" class="form__input" name="description" id="description">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                             <!-- grupo: Descripción larga -->
+            <div class="form__group" id="group__desl">
+				<label for="longDescription" class="form__label">Descripción Larga:</label>
+				<div class="form__group-input">
+					<input type="text" class="form__input" name="longDescription" id="longDescription">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                                <!-- grupo: Edad desde -->
+            <div class="form__group" id="group__edadD">
+				<label for="ageD" class="form__label">Edad desde:</label>
+				<div class="form__group-input">
+					<input type="number" class="form__input" name="ageD" id="ageD">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                                <!-- grupo_ Edad hasta -->
+            <div class="form__group" id="group__ageU">
+				<label for="ageU" class="form__label">Edad hasta:</label>
+				<div class="form__group-input">
+					<input type="number" class="form__input" name="ageU" id="ageU">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div>
+                            <!-- Envio sin cargo -->
+			<!-- <div class="form__group" id="group__cargo">
+				<label for="freeShipping" class="form__label">Envio sin cargo:</label>
+				<div class="form__group-input">
+					<input type="checkbox" class="form__input" name="freeShipping" id="freeShipping" >
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div> -->
+			                <!-- IMG -->
+			<!-- <div class="form__group" id="group__img">
+				<label for="img" class="form__label">Foto:</label>
+				<div class="form__group-input">
+					<input type="file" class="form__input" name="img" id="img" accept=".jpg,.png">
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div> -->
+			                <!-- email -->
+			<!-- <div class="form__group" id="group__mail">
+				<label for="mail" class="form__label">Correo:</label>
+				<div class="form__group-input">
+					<input type="email" class="form__input" name="mail" id="mail" placeholder="John" autofocus>
+					<i class="form__validation-state fas fa-times-circle"></i>
+				</div>
+				<p class="form__input-error">Diligencia bien el formulario</p>
+			</div> -->
+
+            <div>
+                <button id="btn-create">Crear</button>
+                <button type="button" id="btn-update" disabled>Guardar</button>
+                <button type="button" id="btn-cancel" disabled>Cancelar</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+</section>
+
+<section class="section-products-table">
+    <h2>Listado de productos</h2>
+    <div class="products-table-container"></div>
+</section>
+

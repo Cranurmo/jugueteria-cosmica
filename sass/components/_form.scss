@@ -1,0 +1,141 @@
+.form {
+    width: 100%;
+    padding: 50px;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-bottom: 50px;
+
+    &-main{
+            // margin-top: 500px;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding: 2px;
+            
+        }
+    &__label {
+        display: block;
+        font-weight: 700;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    &__group-input {
+        position: relative;
+    }
+    
+    &__input {
+        width: 100%;
+        background: #fff;
+        border: 3px solid transparent;
+        border-radius: 3px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 40px 0 10px;
+        transition: .3s ease all;
+    }
+    
+    &__input:focus {
+        border: 3px solid #203239;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    }
+    
+    &__input-error {
+        font-size: 12px;
+        margin-bottom: 0;
+        display: none;
+        color: red;
+    }
+    
+    &__input-error-activo {
+        display: block;
+    }
+    
+    &__validation-state {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        z-index: 1;
+        font-size: 16px;
+        opacity: 0;
+    }
+    
+    &__mensaje-activo {
+        display: block;
+    }
+    
+    &__mensaje p {
+        margin: 0;
+    }
+    
+    &__group-btn-enviar {
+        position: relative;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    &__btn {
+        top: 10px;
+        left: 50%;
+        position: absolute;
+        height: 45px;
+        line-height: 45px;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .1s ease all;
+    }
+
+    &__btn__nosotros{
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 450px;
+        height: 45px;
+        width: 15%;
+        background: #000;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .1s ease all;
+    }
+    
+    &__btn:hover {
+        box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+        transform: translate(5px, 5px);
+    }
+    
+    /* ----- -----  Estilos para Validacion ----- ----- */
+    &__group-correcto &__validation-state {
+        color: #1ed12d;
+        opacity: 1;
+    }
+    
+    &__group-incorrecto &__label {
+        color: #bb2929;
+    }
+    
+    &__group-incorrecto &__validation-state {
+        color: #bb2929;
+        opacity: 1;
+    }
+    
+    &__group-incorrecto &__input {
+        border: 3px solid #bb2929;
+    }
+} 
+
+
+
+

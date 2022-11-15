@@ -1,0 +1,23 @@
+{{#if products.length }}
+    {{#each products}}
+        <div class="card">
+        <!-- <a href="#" class="card__link">Comprar</a> -->
+        <article class="card__article">
+            <div class="card__image-container">
+                <img loading="lazy" src='' alt="Producto" class="card__image">
+            </div>
+            <div class="card__title-container"><p class="card__title card__title-hover">{{name}} $<span class="precio"> {{price}}</span></p></div>
+            <div class="card__content card__bottom-hover card__bottom">
+                <h2 class="card__heading">{{name}}</h2>
+                <div>
+                    
+                    <p>{{description}}</p>
+                    <button class="card__content__cart-buttom" id="{{id}}">Agregar al carrito</button>
+                </div>
+            </div>
+        </article>
+    </div>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}

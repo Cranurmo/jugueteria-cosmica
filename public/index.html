@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Cósmica</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+<header class="main-header">
+    <div class="main-header__top">
+        <div class="main-header__logo-container">
+            <img src="./img/logo/cosmico.png" alt="" srcset="">
+        </div>
+        <div class="main-header__search-form-container">
+            <input class="main-header__search-form" type="search" placeholder="Buscar"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="main-header__hamburguer-button-container">
+            <label for="main-nav-toggle" class="hamburguer-button" title="Expandir barra de navegación">
+                <span class="hamburguer-button__top-bread"></span>
+                <span class="hamburguer-button__meat"></span>
+                <span class="hamburguer-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__cart-button-container">
+            <ul>
+                <li class="submenu">
+                    <i class="fa-solid fa-cart-shopping cart main-header__cart-button"></i>
+                        <div id="carrito">
+                                
+                            <!-- render de carrito -->
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-header__main-nav-container">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#/inicio" class="main-nav__link">Inicio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#/alta" class="main-nav__link">Alta</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#/contacto" class="main-nav__link">Contacto</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#/nosotros" class="main-nav__link">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</header>
+
+
+
+    <main></main>
+
+    <script src="js/vendor/handlebars.min-v4.7.7.js"></script>
+
+    <script src="js/main.js" type="module"></script>
+
+    <!-- <script src="./js/app.js"></script> -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="footer-logo"><img loading="lazy" src="./img/logo.png" alt=""></h3>
+                <span class="footer-info">123456789</span>
+                <span class="footer-info">jugueteriacosmica@algo.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="footer-menu-title">Menu</span>
+                    <a href="" class="footer-menu-item">Home</a>
+                    <a href="" class="footer-menu-item">Juguetes</a>
+                    <a href="" class="footer-menu-item">Terminos y condiciones</a>
+                </div>
+            </div>
+            <div class="footer-content-container">
+                <span class="footer-menu-title">Legal</span>
+                <a href="" class="footer-menu-item">Politica de privacidad</a>
+                <a href="" class="footer-menu-item">Cookies</a>
+                <a href="" class="footer-menu-item">Terminos y condiciones</a>
+            </div>
+            <div class="footer-content-container">
+                <span class="footer-menu-title">Siguenos</span>
+                <div class="footer-social-container">
+                    <a href="" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="footer-social-link"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+            <div class="footer-copyright-container">
+                <span class="footer-copyright">&copy;2022, algo@algo.com</span>
+            </div>    
+    </footer>
+        <script src="https://kit.fontawesome.com/1688a83fec.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

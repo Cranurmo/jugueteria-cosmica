@@ -1,0 +1,87 @@
+#carrito{
+    position: absolute;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.submenu {
+    position: relative;
+    // background-color: ; 
+    // margin-left: 10px;
+    width: 320px;
+    @media (min-width: 320px) {
+        padding: 0 120px;  
+        font-size: 70%;        
+    }
+    @media (min-width: 375px) {
+        padding: 0 0px;  
+        font-size: 70%; 
+        width: auto;       
+    }
+    @media (min-width: 1024px) {
+        padding: 0 0px;  
+        font-size: 70%;  
+        width: 400px; 
+        right: 150px;     
+    }
+    @media (min-width: 2560px) {
+        padding: 0 120px;  
+        font-size: 70%;      
+        right: 500px;  
+    }
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    overflow-y: scroll;
+    
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.borrar-curso {
+    background-color: rgb(34, 69, 85);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 300px;
+}
+
+.cart{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}

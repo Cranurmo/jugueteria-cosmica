@@ -1,0 +1,75 @@
+
+//abstract
+
+//vendors
+@use 'vendors/normalize';
+
+
+//base
+@use 'base/reset';
+@use 'base/utilities';
+
+//layout
+@use 'layout/hamburger-button';
+@use 'layout/main-header';
+@use 'layout/main-nav';
+@use 'layout/main-nav-toggle';
+@use 'layout/footer';
+
+//componentes
+@use 'components/form';
+@use 'components/front';
+@use 'components/carousel';
+@use 'components/card';
+@use 'components/customers';
+@use 'components/trending';
+@use 'components/about';
+@use 'components/cart';
+
+//pages
+@use 'pages/index';
+
+//themes
+    
+
+
+@media (min-width: 1024px) {
+    .main-header__logo-container{
+        flex-basis: 10em;
+    }
+}
+
+@media (min-width: 768px){
+    .main-nav__list{
+        flex-direction: row;
+    }
+}
+
+// .cards-container{
+//     padding: 1em;
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1em;
+//     justify-content: center;
+// }
+
+.cards-container{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+
+
+
+
+
+
+

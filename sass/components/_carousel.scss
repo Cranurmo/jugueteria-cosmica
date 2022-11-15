@@ -1,0 +1,46 @@
+.carousel {
+    padding: 0 20px;
+    &-list-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    &-list {
+      display: flex;
+      align-items: center;
+      height: 300px;
+      transform: translateX(0);
+      transition: all 1s ease-in-out;
+    }
+    
+    &-list-item {
+      margin-right: 30px;
+      position: relative;
+      max-width: 100%;
+    }
+  
+    &-list-item-img {
+      transition: all .2s ease-in-out;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    &-list-item:hover &-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
+    
+    .arrow {
+      font-size: 120px;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      color: #3C415C;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  

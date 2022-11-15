@@ -1,0 +1,39 @@
+.front-page{
+    width: 100px;
+    position: relative;
+
+    &-container{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 3%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        background-color: #E0DDAA;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+    }
+
+    &-big-img{
+        width: 800px;
+        // height: 600px;
+        height: auto;
+        max-width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.9) -5px 5px, rgba(0, 0, 0, 0.7) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+    }
+
+    &-small-img{
+        width: 350px;
+        height: 300px;
+        max-width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    }
+
+    &-container-small{
+        max-width: 100%;
+        height: 605px;
+        background-color: #B8FFF9;
+    }
+}
